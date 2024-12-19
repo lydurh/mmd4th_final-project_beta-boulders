@@ -32,3 +32,46 @@
     margin: 0; /* Removes margin to align with grid gap */
   }
 }
+
+@media (min-width: 1000px) {
+  section {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .grid-box {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .grid-box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .packages-image {
+    margin-top: -200px;
+  }
+  .what-is-bouldering-image {
+    margin-top: -200px;
+  }
+}

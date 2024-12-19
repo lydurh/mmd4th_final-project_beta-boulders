@@ -1,5 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
+:root {
+  --black: #131313;
+  --white: #f8f8f8;
+  --orange: #e09824;
+  --blue: #246ce0;
+}
+
+h1 {
+  font-family: "Archivo", serif;
+  font-size: 5rem;
+}
+h2 {
+  font-family: "Archivo", serif;
+  font-size: 4rem;
+}
+h3 {
+  font-family: "Archivo", serif;
+  font-size: 3.188rem;
+}
+h4 {
+  font-family: "Archivo", serif;
+  font-size: 2.5rem;
+}
+h5 {
+  font-family: "Archivo", serif;
+  font-size: 2rem;
+}
+h6 {
+  font-family: "Archivo", serif;
+  font-size: 1.25;
+}
+p {
+  font-family: "Inter", serif;
+  font-size: 1rem;
+}
+
 /* Global Styles */
 * {
   margin: 0;
@@ -9,7 +45,7 @@
 
 body {
   line-height: 1.2;
-  color: #333;
+  color: var(--black);
 }
 
 /* typogarphy */
@@ -31,6 +67,7 @@ h1 {
   font-size: 5rem;
   font-weight: bold;
 }
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -43,8 +80,8 @@ h1 {
 }
 
 .primary-btn {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .secondary-btn {
@@ -58,7 +95,7 @@ h1 {
 
 /* nav bar */
 header {
-  background: #131313;
+  background: var(--black);
 }
 .nav-header {
   background: url("/assets/Img/main.png") no-repeat center center/cover;
@@ -83,7 +120,7 @@ header {
 }
 
 .hamburger span {
-  background-color: #f8f8f8;
+  background-color: var(--white);
   height: 3px;
   width: 100%;
   transition: all 0.3s ease;
@@ -98,14 +135,14 @@ header {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #131313;
+  background-color: var(--black);
   text-align: center;
   padding: 2rem 0;
   padding-left: 40px;
 }
 
 .menu a {
-  color: #f8f8f8; /* Red text color */
+  color: var(--white);
   font-size: 3.5rem;
   font-family: "Archivo", serif;
   text-decoration: none;
@@ -114,10 +151,10 @@ header {
 }
 
 .menu a:hover {
-  color: #fff; /* Hover effect */
+  color: var(--white);
 }
 
-/* Active Menu (JS adds this class) */
+/* Active Menu  */
 .menu.active {
   display: flex;
 }
@@ -137,7 +174,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   font-size: 1.5rem;
   font-weight: bold;
   width: 40px;
@@ -154,12 +191,13 @@ header {
 /* hero section */
 
 .hero {
-  color: white;
+  color: var(--white);
   height: 100vh;
   display: flex;
   align-items: center;
   text-align: left;
-  padding: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .hero-content h1 {
@@ -181,11 +219,24 @@ header {
 
 /* First Time Section */
 .first-time {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #f9f9f9;
-  padding: 40px;
+  background-color: var(--white);
+}
+
+.first-time p {
+  color: var(--black);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.first-time h3 {
+  font-weight: 400;
+  color: var(--blue);
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .first-time-content {
@@ -210,11 +261,12 @@ header {
 
 /* Flexible Packages Section */
 .packages {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #f9f9f9;
-  padding: 40px;
+  background-color: var(--black);
 }
 
 .packages-content {
@@ -222,15 +274,22 @@ header {
   padding: 20px;
 }
 
-.packages-content h2 {
-  font-size: 2rem;
+.packages-content p {
+  color: var(--white);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.packages-content h3 {
+  font-weight: 400;
+  color: var(--blue);
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .packages-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   min-height: 751px;
 }
 .packages-image img {
@@ -241,8 +300,11 @@ header {
 .container-img-grid {
   display: grid;
   flex-direction: column;
+}
 
-  margin: 2.25rem;
+.locations {
+  padding-top: 40px;
+  padding-bottom: px;
 }
 
 .container-img-grid h2 {
@@ -270,8 +332,9 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 154, 0.72);
-  color: #fff;
+
+  background: var(--black);
+  color: var(--white);
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -285,31 +348,66 @@ header {
   opacity: 1;
 }
 
+/* Index end */
+
 /* about us */
 
-/* styles.css */
-
 .hero-about {
-  position: absolute;
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #131313;
+  text-align: left;
+  padding-top: 200px;
+  background-color: var(--black);
 }
 
 .hero-about h1 {
+  color: white;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hero-about p {
   font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+.idea h6 {
+  margin-top: 220px;
+  font-size: 16px;
+  color: var(--blue);
+}
+
+.birth h6 {
+  font-size: 16px;
+  color: var(--blue);
+}
+.idea p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--black);
+}
+
+.birth p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--black);
+}
+
+.village h6 {
+  font-size: 16px;
+  color: var(--blue);
+}
+.village p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--black);
 }
 
 .idea,
 .birth,
 .village {
   margin: 20px 0;
-  padding: 20px;
   border-radius: 10px;
 }
 
@@ -320,13 +418,13 @@ header {
 }
 
 .hero-about img {
-  position: relative;
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
-  padding-bottom: -50%;
+  margin-bottom: -200px;
 }
 
 .gallery .image img {
+  height: auto;
   width: 100%;
   border-radius: 10px;
 }
@@ -335,4 +433,288 @@ header {
   width: 100%;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+/* first time page*/
+
+.hey-first-timer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.hey-first-timer p {
+  color: var(--black);
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+.hey-first-timer-content {
+  flex: 1;
+}
+
+.hey-first-timer-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 751px;
+}
+.hey-first-timer-image img {
+  border-radius: 8px;
+}
+
+/* climbing section page*/
+.what-is-bouldering {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--black);
+}
+
+.what-is-bouldering-content {
+  flex: 1;
+}
+
+.what-is-bouldering p {
+  color: var(--white);
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+.what-is-bouldering-content h4 {
+  color: var(--white);
+}
+
+.what-is-bouldering-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 751px;
+}
+.what-is-bouldering-image img {
+  border-radius: 8px;
+}
+
+/* first time page end */
+
+/* classes page */
+
+/* Filters */
+
+/* Grid Layout */
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  margin-top: 40px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #f39c12;
+}
+
+.card p {
+  text-align: left;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.locations-header {
+  padding: 120px;
+  color: var(--white);
+  background-color: var(--black);
+}
+/* dropdown menu */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/* Base dropdown styles */
+.filter {
+  appearance: none;
+  background-color: #fff; /* White background */
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  font-family: sans-serif;
+  position: relative;
+}
+
+/* Adjust widths */
+.dropdown-long {
+  flex: 1;
+  min-width: 300px;
+}
+.dropdown-short {
+  width: 150px;
+}
+
+/* Custom arrow icon using a background SVG */
+.filter {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" width="12" height="12" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 15l-7-7h14l-7 7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px 12px;
+}
+
+/* Remove default arrow in IE and Edge */
+.filter::-ms-expand {
+  display: none;
+}
+
+/* Hover and focus states */
+.filter:hover {
+  background-color: #f5f5f5;
+}
+.filter:focus {
+  border: 2px solid #999;
+  padding: 8px 38px 8px 13px; /* Adjust padding if border is added */
+}
+
+/* Hero Section */
+
+/* single location page */
+
+.hero-single-location {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: left;
+  padding: var(--spacing) 0;
+  position: relative;
+}
+
+.hero-single-location-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+.hero-single-location-content h1 {
+  font-size: 3rem;
+  margin: 0 0 var(--spacing) 0;
+}
+
+.hero-single-location-image {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero-single-location-image img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Offer Section */
+.offer-section {
+  padding: var(--spacing) 0;
+  background-color: #fff;
+}
+
+.offer-section .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+.offer-section h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing);
+  text-align: left;
+}
+
+.offer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing);
+}
+
+.offer-list .icon {
+  margin-right: var(--spacing);
+}
+
+.offer-list p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Image Gallery */
+.image-gallery {
+  padding: var(--spacing) 0;
+  background-color: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing);
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Map Section */
+.map-section {
+  padding: var(--spacing) 0;
+}
+
+.map-section .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+.map-section img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }

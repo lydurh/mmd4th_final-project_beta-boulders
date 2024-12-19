@@ -37,13 +37,13 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.hero-location {
   text-align: center;
   padding: 20px;
   background-color: #f4f4f4;
 }
 
-.hero img {
+.hero-location img {
   max-width: 100%;
   height: auto;
 }
@@ -89,13 +89,13 @@ body {
 }
 
 /* Location Section */
-.location {
+.location-single {
   text-align: center;
   padding: 20px;
   background-color: #fff;
 }
 
-.location img {
+.location-single img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;

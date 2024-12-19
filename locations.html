@@ -4,41 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Locations</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="/assets/logos/BETALOGOwhite-trasp 2.png"
+              alt="navbarlogo"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu" id="menu">
+          <a href="first-time.html">First time</a>
+          <a href="prices.html">Prices</a>
+          <a href="Classes.html">Classes</a>
+          <a href="locations.html">Locations</a>
+          <a href="aboutus.html">About us</a>
+          <a href="shop">Shop</a>
+          <a href="account.html">Account</a>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <section class="locations">
-        <h1>Locations</h1>
-        <div class="location-grid">
-          <a href="#" class="location-item">
-            <img src="/assets/Img/west-main.jpg" alt="West Gym" />
-            <div class="location-overlay">West</div>
-          </a>
-          <a href="#" class="location-item">
-            <img src="/assets/Img/south.jpg" alt="South Gym" />
-            <div class="location-overlay">South</div>
-          </a>
-          <a href="#" class="location-item">
-            <img src="/assets/Img/ost.jpg" alt="Osterbro Gym" />
-            <div class="location-overlay">Osterbro</div>
-          </a>
-          <div class="location-item coming-soon">
-            <img src="/assets/Img/2025.jpg" alt="Coming 2025" />
-            <div class="location-overlay">Coming 2025</div>
+        <h2>Locations</h2>
+        <div class="container-img-grid">
+          <div id="imagecontainer">
+            <div class="img_wrap">
+              <a href="/Single-location-pages/west.html">
+                <img src="/assets/Img/west-main.jpg" alt="Vanlose" />
+                <h1 class="img_description">WEST</h1>
+              </a>
+            </div>
+            <div class="img_wrap">
+              <a href="/Single-location-pages/south.html">
+                <img src="/assets/Img/south.jpg" alt="South" />
+                <h1 class="img_description">South</h1>
+              </a>
+            </div>
+            <div class="img_wrap">
+              <a href="/Single-location-pages/osterbro.html">
+                <img src="/assets/Img/ost.jpg" alt="Osterbro" />
+                <h1 class="img_description">Osterbro</h1>
+              </a>
+            </div>
+            <div class="img_wrap">
+              <img src="/assets/Img/2025.jpg" alt="Coming 2025" />
+              <h1 class="img_description">Coming 2025</h1>
+            </div>
           </div>
         </div>
       </section>
-
-      <section class="cafe">
-        <h2>Cafe</h2>
-        <p>Take a look at our menu.</p>
-        <div class="placeholder">
-          <img src="menu-placeholder.jpg" alt="Cafe Menu" />
-        </div>
-      </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
