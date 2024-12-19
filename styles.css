@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.2;
+  color: #333;
+}
+
+/* typogarphy */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background-color: black;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid black;
+  color: black;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* nav bar */
+header {
+  background: #131313;
+}
+.nav-header {
+  background: url("/assets/Img/main.png") no-repeat center center/cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+  z-index: 1000;
+}
+/* Hamburger Icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: #f8f8f8;
+  height: 3px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Menu */
+.menu {
+  align-items: flex-start;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #131313;
+  text-align: center;
+  padding: 2rem 0;
+  padding-left: 40px;
+}
+
+.menu a {
+  color: #f8f8f8; /* Red text color */
+  font-size: 3.5rem;
+  font-family: "Archivo", serif;
+  text-decoration: none;
+  margin: 1rem 0;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #fff; /* Hover effect */
+}
+
+/* Active Menu (JS adds this class) */
+.menu.active {
+  display: flex;
+}
+
+/* Hamburger Animation */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 40px;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+/* navbar end */
+
+/* Index */
+
+/* hero section */
+
+.hero {
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 40px;
+}
+
+.hero-content h1 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons .btn {
+  margin-right: 10px;
+}
+
+/* First Time Section */
+.first-time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.first-time-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.first-time-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.first-time-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 751px;
+}
+.first-time-image img {
+  border-radius: 8px;
+}
+
+/* Flexible Packages Section */
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.packages-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.packages-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.packages-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 751px;
+}
+.packages-image img {
+  border-radius: 8px;
+}
+
+/* Locations Section */
+.container-img-grid {
+  display: grid;
+  flex-direction: column;
+
+  margin: 2.25rem;
+}
+
+.container-img-grid h2 {
+  margin-bottom: 2.25rem;
+}
+
+#imagecontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.img_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.img_wrap img {
+  width: 100%;
+}
+
+.img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* about us */
+
+/* styles.css */
+
+.hero-about {
+  position: absolute;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #131313;
+}
+
+.hero-about h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-about p {
+  font-size: 1.2rem;
+}
+
+.idea,
+.birth,
+.village {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.hero-about img {
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+  padding-bottom: -50%;
+}
+
+.gallery .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.building img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+%!Adobe-FontList 1.20
+%Locale:0x809
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Adam
+FamilyName:Adam
+StyleName:normal
+FullName:Adam
+MenuName:Adam
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Gaia\Dropbox\Beta Media Bank\0. Logos\Official Graphics\Font\Adam.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:13648
+FileModTime:1536047617
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Adam
+NameArray:0,Win,1,Adam
+NameArray:0,Win,16,Adam
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Gaia\Dropbox\Beta Media Bank\0. Logos\Official Graphics\Font\Font.txt
+FileModTime:1536047615
+%EndFont
+

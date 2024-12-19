@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermediate Course</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      header {
+        background-color: #000;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 14px;
+      }
+
+      header a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero {
+        position: relative;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .content h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: disc;
+        margin: 10px 20px;
+      }
+
+      ul li {
+        margin-bottom: 8px;
+      }
+
+      .price {
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .form {
+        margin-top: 20px;
+      }
+
+      .form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      .form select,
+      .form input,
+      .form button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .form button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        background-color: #000;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+        font-size: 14px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="container">
+      <div class="hero">
+        <img src="/assets/Img/kids.jpg" alt="Intermediate Course Image" />
+      </div>
+
+      <div class="content">
+        <h1>Intermediate Course</h1>
+        <p>
+          Are you stuck at yellow (5) to blue (6B) and can’t progress further?
+          Are you looking to climb with people at your level and make new
+          friends?
+        </p>
+        <p>
+          The Intermediate course is targeted at recreational climbers, who want
+          to progress from climbing Yellow (5c) / Blue (6b) boulders to higher
+          grades while having fun and meeting new people!
+        </p>
+
+        <ul>
+          <li>
+            For 6 weeks you will learn about the different aspects of
+            bouldering: balance, power, technique, route reading, and more.
+          </li>
+          <li>
+            There will also be an emphasis on "training and climbing together"
+            as a team and socializing.
+          </li>
+          <li>
+            The lessons are 1.5 hours each, giving you time to connect with
+            fellow climbers and integrate what you’ve learned.
+          </li>
+          <li>
+            You will train as a team with the same group and coach every class,
+            improving your technique and meeting new climbing buddies!
+          </li>
+          <li>The minimum age for the course is 14 years old.</li>
+          <li>Classes are held in English.</li>
+        </ul>
+
+        <p class="price">Price: 799 kr.<br />Member Price: 719 kr.</p>
+        <p>
+          Entrance ticket & shoes not included.<br />Classes are subject to our
+          terms & conditions.
+        </p>
+
+        <div class="form">
+          <label for="location">Change location</label>
+          <select id="location" name="location">
+            <option value="">Select location</option>
+            <option value="west">West</option>
+          </select>
+
+          <label for="date">Choose a date</label>
+          <input type="date" id="date" name="date" />
+
+          <label for="people">Number of people</label>
+          <input type="number" id="people" name="people" value="1" min="1" />
+
+          <button type="submit">Add to basket</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="#">First time</a>
+      <a href="#">Prices</a>
+      <a href="#">Classes</a>
+      <a href="#">Locations</a>
+      <a href="#">About us</a>
+      <a href="#">Join us</a>
+      <a href="#">Shop</a>
+    </footer>
+  </body>
+</html>

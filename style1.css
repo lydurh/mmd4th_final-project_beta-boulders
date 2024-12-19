@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.profile-icon {
+  font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Offer Section */
+.offer {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.offer h2 {
+  text-align: center;
+}
+
+.offer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offer li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.offer li span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.gallery img {
+  max-width: 30%;
+  border-radius: 5px;
+}
+
+/* Location Section */
+.location {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.location img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}

@@ -1,0 +1,34 @@
+/* Responsive */
+@media (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    justify-content: flex-end;
+  }
+  .menu a {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+}
+
+@media (min-width: 900px) {
+  .container-img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px;
+  }
+
+  #imagecontainer {
+    display: contents; /* Allows its children to adopt grid layout directly */
+  }
+
+  .img_wrap {
+    margin: 0; /* Removes margin to align with grid gap */
+  }
+}
