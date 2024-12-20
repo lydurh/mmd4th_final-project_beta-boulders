@@ -98,7 +98,7 @@ header {
   background: var(--black);
 }
 .nav-header {
-  background: url("/assets/Img/main.png") no-repeat center center/cover;
+  background: url("img/main.png") no-repeat center center/cover;
 }
 
 .navbar {
