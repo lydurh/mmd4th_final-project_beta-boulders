@@ -75,3 +75,19 @@
     margin-top: -200px;
   }
 }
+@media (min-width: 768px) {
+  .current-promo .promo-image {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .past-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .past-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
